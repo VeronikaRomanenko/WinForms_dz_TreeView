@@ -30,19 +30,23 @@ namespace WinForms_dz_TreeView
 
         private void treeView1_BeforeSelect(object sender, TreeViewCancelEventArgs e)
         {
-            string[] dirs = Directory.GetDirectories(e.Node.FullPath);
-            for (int i = 0; i < dirs.Length; i++)
+            try
             {
-                TreeNode driveNode = new TreeNode(new DirectoryInfo(dirs[i]).Name);
-                e.Node.Nodes.Add(driveNode);
-            }
+                lsbSoderschimoe.Items.Clear();
+                string[] dirs = Directory.GetDirectories(e.Node.FullPath);
+                for (int i = 0; i < dirs.Length; i++)
+                {
+                    TreeNode driveNode = new TreeNode(new DirectoryInfo(dirs[i]).Name);
+                    e.Node.Nodes.Add(driveNode);
 
-            txbAdres.Text = e.Node.FullPath;
+                    lsbSoderschimoe.Items.Add(new DirectoryInfo(dirs[i]).Name);
+                }
+                txbAdres.Text = e.Node.FullPath;
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
-        //string[] dirs = Directory.GetDirectories(treeView1.SelectedNode.FullPath);
-        //    for (int i = 0; i<dirs.Length; i++)
-        //    {
-        //        lsbSoderschimoe.Controls.Add(new Control(new DirectoryInfo(dirs[i]).Name));
-        //    }
     }
 }

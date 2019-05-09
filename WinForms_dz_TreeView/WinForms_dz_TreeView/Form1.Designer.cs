@@ -35,14 +35,14 @@
             // 
             // txbAdres
             // 
-            this.txbAdres.Location = new System.Drawing.Point(13, 13);
+            this.txbAdres.Location = new System.Drawing.Point(12, 12);
             this.txbAdres.Name = "txbAdres";
             this.txbAdres.Size = new System.Drawing.Size(384, 20);
             this.txbAdres.TabIndex = 0;
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(13, 39);
+            this.treeView1.Location = new System.Drawing.Point(13, 50);
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(384, 160);
             this.treeView1.TabIndex = 3;
@@ -51,7 +51,7 @@
             // lsbSoderschimoe
             // 
             this.lsbSoderschimoe.FormattingEnabled = true;
-            this.lsbSoderschimoe.Location = new System.Drawing.Point(12, 205);
+            this.lsbSoderschimoe.Location = new System.Drawing.Point(11, 216);
             this.lsbSoderschimoe.Name = "lsbSoderschimoe";
             this.lsbSoderschimoe.Size = new System.Drawing.Size(385, 173);
             this.lsbSoderschimoe.TabIndex = 4;
@@ -60,7 +60,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 389);
+            this.ClientSize = new System.Drawing.Size(409, 398);
             this.Controls.Add(this.lsbSoderschimoe);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.txbAdres);
